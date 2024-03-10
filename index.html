@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI</title>
+    <link rel="icon" type="image/png" href="logo.jpg" />
+    <style>
+      body {
+        /*background-color: rgb(255, 219, 250);
+            transition: background-color 0.5s;*/
+        background-color: rgb(255, 219, 250);
+        transition: background-color 0.5s;
+      }
+
+      .satauri {
+        margin-top: -90px;
+        text-align: center;
+        margin-right: 50px;
+      }
+
+      .satauri2 {
+        margin-top: 20px;
+        text-align: center;
+        margin-right: 50px;
+      }
+
+      .input {
+        border-radius: 5px;
+        margin-top: 5px;
+        height: 30px;
+        width: 650px;
+        margin-left: 26%;
+        border-color: rgb(205, 205, 205);
+      }
+
+      .paragrafi {
+        margin-left: 545px;
+      }
+
+      .vertical-line {
+        border-left: 2px solid #686868;
+        height: 100vh;
+        position: fixed;
+        left: 10%;
+        top: 0;
+      }
+
+      .theme {
+        color: black;
+        margin-left: 10px;
+        margin-top: 30px;
+      }
+
+      .buttons {
+        border-color: rgb(214, 213, 213);
+        border-radius: 5px;
+        margin-top: 20px;
+        width: 50px;
+        height: 40px;
+      }
+
+      .chat-window {
+        width: 500px;
+        margin: 60px auto;
+        margin-right: 405px;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        height: 200px;
+        overflow-y: scroll;
+      }
+
+      #questionButton {
+        margin-left: 75%;
+        width: 50px;
+        height: 35px;
+        position: absolute; /* Add this line */
+        top: 518px;
+        border-color: blue;
+        border-radius: 5px;
+        background-color: rgb(87, 87, 199);
+      }
+    </style>
+  </head>
+  <body>
+    <!--theme-->
+
+    <div class="vertical-line"></div>
+    <p id="idTheme" class="theme">choose theme:</p>
+    <div>
+      <button onclick="BackgroundChangeColor('white')" class="buttons">
+        white
+      </button>
+      <button onclick="BackgroundChangeColor('black')" class="buttons">
+        black
+      </button>
+      <div class="bottom-buttons">
+        <button
+          onclick="BackgroundChangeColor('grey')"
+          id="grey"
+          class="buttons"
+        >
+          grey
+        </button>
+        <button
+          onclick="BackgroundChangeColor('pink')"
+          id="grey"
+          class="buttons"
+        >
+          pink
+        </button>
+      </div>
+    </div>
+
+    <!--shesavali-->
+    <h2 id="text1" class="satauri">Explore life's Wonders</h2>
+    <h2 id="text2" class="satauri2">With TAI</h2>
+
+    <!-- Chat window -->
+    <div id="chatWindow" class="chat-window">
+      <!-- Messages will appear here -->
+    </div>
+
+    <!--user side-->
+
+    <form action="user" id="questionForm">
+      <input
+        id="userInput"
+        class="input"
+        type="user_side"
+        placeholder="what do you want to know about?"
+      />
+      <p id="textASKQUESTION" class="paragrafi">
+        ask any questions and I will help you:)
+      </p>
+    </form>
+
+    <!--script-->
+
+    <script src="script.js"></script>
+  </body>
+</html>
